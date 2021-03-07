@@ -73,11 +73,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="frm_editor.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="frm_editor.Designer.vb">
+      <DependentUpon>frm_editor.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,6 +97,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_editor.resx">
+      <DependentUpon>frm_editor.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -115,6 +118,24 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="items\moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="items\new_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="items\open_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="items\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="items\save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="items\sun.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

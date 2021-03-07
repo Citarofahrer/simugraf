@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.simugraf.frmeditor
+            Me.MainForm = Global.simugraf.frm_editor
         End Sub
     End Class
 End Namespace
